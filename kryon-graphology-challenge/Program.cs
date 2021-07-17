@@ -27,6 +27,10 @@ namespace kryon_graphology_challenge
 
             // TODO: STAGE 1 - read and understand what this code is suppose to do //
             string[] paths = { "demo-image-1.jpeg", "demo-image-2.jpeg" , "demo-image-3.jpeg", "demo-image-4.jpeg","demo-image-5.jpeg" };
+            
+            // change current directory to project directory
+            string projectDirectory = Path.GetFullPath(@"..\..\..\");
+            Directory.SetCurrentDirectory(projectDirectory);
 
             foreach (string path in paths) {
                 Console.WriteLine("\nReading challenge file " + path + "...\n");
